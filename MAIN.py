@@ -6,7 +6,6 @@
 # exclude={part}&appid={YOUR API KEY}
 
 import requests
-import json
 
 # Example response with Doha, Qatar as the location
 
@@ -16,6 +15,6 @@ print(w_retrieval.status_code)  # Prints the status code (200 = OK) (If the API 
 print(w_retrieval.json())       # Prints all the content of the API request (All the data)
 print("\n")
 
-w_log = w_retrieval.json()
+w_log = w_retrieval.json()      # Store the json file (the json file contains all the data, it's like a neat box of information that OpenWeather and other API's give is)
 
 print("Temperature: " + str(w_log['current']['temp'])) # Prints the current temperature
