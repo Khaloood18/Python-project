@@ -1,4 +1,10 @@
 This is our python project
 Maya here :) 
 Khaled here too :=))
+<<<<<<< HEAD
 Wassup guys .... good news me and belal should import requests and maya and diala should import datetime and pytz.... yay us
+=======
+Belal Here too! :D
+>>>>>>> ed0de938d40e246056350d4824fc21814e92a4d4
+
+Hey man...
