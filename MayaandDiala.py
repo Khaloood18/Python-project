@@ -13,3 +13,4 @@ timezone = pytz.timezone(local)
 #Prints it out
 d_aware = timezone.localize(d)
 print(str(d_aware))
+# Diala was here... :))
