@@ -2,8 +2,12 @@ from datetime import datetime
 from pytz import timezone
 format = "%Y-%m-%d %H:%M:%S %Z%z"
 # Current time in UTC
+for tz in pytz.all_timezones:
+    print (tz)
+#Takes in the place we want
+local=input('Continent/Country from the above options? ')
 now_utc = datetime.now(timezone('UTC'))
 print(now_utc.strftime(format))
 # Convert to Asia/Kolkata time zone
-now_asia = now_utc.astimezone(timezone('Asia/Kolkata'))
-print(now_asia.strftime(format))                                      
+now_local = now_utc.astimezone(timezone(local))
+print(now_local.strftime(format))
