@@ -1,0 +1,29 @@
+                                    # 2 modules that will provide the datetime and timezone
+from datetime import datetime
+from pytz import timezone
+# Format in which the time will be shown in
+format = "%Y-%m-%d %H:%M:%S %Z%z"
+# Shows all the timezones in the database
+for tz in pytz.all_timezones:
+    print (tz)
+# Takes in the place we want
+local=input('Continent/Country from the above options? ')
+# Current time in UTC
+for tz in pytz.all_timezones:
+    print (tz)
+#Takes in the place we want
+local=input('Continent/Country from the above options? ')
+now_utc = datetime.now(timezone('UTC'))
+<<<<<<< HEAD
+
+# Convert to time zone wanted
+now_local = now_utc.astimezone(timezone(local))
+print(now_local.strftime(format))
+
+# This is the final project
+=======
+print(now_utc.strftime(format))
+# Convert to Asia/Kolkata time zone
+now_local = now_utc.astimezone(timezone(local))
+print(now_local.strftime(format))
+>>>>>>> ad2122b54c37efef2789a8f44f015e1285bea3cf
