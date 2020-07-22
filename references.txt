@@ -1,0 +1,6 @@
+
+https://www.tutorialspoint.com/How-to-convert-date-and-time-with-different-timezones-in-Python
+this is the link i used ^^ 
+I added the variable format in order to display the time in a specific format.
+I also added the variable now_utc which gives us the current time in UTC, then now_local gives 
+the current time converted to the current time in the country wanted.
